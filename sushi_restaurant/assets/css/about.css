@@ -1,0 +1,246 @@
+/* NORMAL FONT */
+@font-face {
+  font-family: "TheSeasonsRegular";
+  src: url("Fonts/TheSeasons/The_Seasons_Regular.ttf");
+}
+
+/* ITALIC FONT */
+
+@font-face {
+  font-family: "TheSeasonsRegularItalic";
+  src: url("../Fonts/TheSeasons/The_Seasons_Italic.ttf");
+}
+
+.section-about {
+}
+
+.section-about .container {
+  padding-left: 0;
+}
+.section-about .container .about-hero {
+  display: flex;
+  padding-bottom: 5rem;
+}
+
+.section-about .left {
+  width: 55%;
+}
+
+.section-about .right {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.section-about .right h3 {
+  font-family: "TheSeasonsRegularItalic";
+  color: hsl(26, 87%, 53%);
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.section-about .about-title {
+  font-family: "TheSeasonsRegular";
+  font-size: 5rem;
+  letter-spacing: -1px;
+  margin-bottom: 1rem;
+}
+
+.section-about .right .about-title img {
+  width: 4.5rem;
+  margin-bottom: -1rem;
+}
+
+.section-about .about-text {
+  font-size: 1.6rem;
+  line-height: 1.6;
+}
+
+/* ////////////////// */
+
+.our-story {
+  padding-bottom: 10rem;
+}
+
+.our-story .container {
+  padding: 0rem 20rem;
+  padding-right: 0;
+  display: flex;
+  /* position: relative; */
+  background: transparent;
+}
+
+.our-story .container .left h2.title {
+  font-family: "TheSeasonsRegular";
+  font-size: 4rem;
+  margin-bottom: 3rem;
+}
+
+.our-story .container .left p.resum {
+  font-size: 1.2rem;
+  line-height: 1.6;
+  width: 70%;
+}
+
+.our-story .container .right {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: transparent;
+  position: relative;
+}
+
+.our-story .container .right::after {
+  content: "";
+  width: 2px;
+  height: 100%;
+  background-color: red;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.our-story .container .right .period-story {
+  padding: 1rem;
+  width: 50%;
+}
+
+.our-story .container .right .period-story:nth-child(odd) {
+  /* background-color: red; */
+  text-align: right;
+}
+.our-story .container .right .period-story:nth-child(even) {
+  /* background-color: green; */
+  align-self: flex-end;
+}
+
+.our-story .container .right h2.year {
+  color: #ef7a1e;
+}
+.our-story .container .right h2.title {
+  text-transform: uppercase;
+  font-weight: 500;
+  margin-bottom: 1rem;
+}
+
+.our-story .container .right .story-text {
+  font-size: 1.2rem;
+}
+
+@media screen and (max-width: 376px) {
+  .section-about {
+  }
+
+  .section-about .container {
+    padding-left: 0;
+  }
+  .section-about .container .about-hero {
+    display: flex;
+    padding-bottom: 5rem;
+  }
+
+  .section-about .left {
+    width: 55%;
+  }
+
+  .section-about .right {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .section-about .right h3 {
+    font-family: "TheSeasonsRegularItalic";
+    color: hsl(26, 87%, 53%);
+    font-size: 3rem;
+    margin-bottom: 1rem;
+  }
+
+  .section-about .about-title {
+    font-family: "TheSeasonsRegular";
+    font-size: 5rem;
+    letter-spacing: -1px;
+    margin-bottom: 1rem;
+  }
+
+  .section-about .right .about-title img {
+    width: 4.5rem;
+    margin-bottom: -1rem;
+  }
+
+  .section-about .about-text {
+    font-size: 1.6rem;
+    line-height: 1.6;
+  }
+
+  /* ////////////////// */
+
+  .our-story {
+    padding-bottom: 10rem;
+  }
+
+  .our-story .container {
+    padding: 0rem 20rem;
+    padding-right: 0;
+    display: flex;
+    /* position: relative; */
+    background: transparent;
+  }
+
+  .our-story .container .left h2.title {
+    font-family: "TheSeasonsRegular";
+    font-size: 4rem;
+    margin-bottom: 3rem;
+  }
+
+  .our-story .container .left p.resum {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    width: 70%;
+  }
+
+  .our-story .container .right {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: transparent;
+    position: relative;
+  }
+
+  .our-story .container .right::after {
+    content: "";
+    width: 2px;
+    height: 100%;
+    background-color: red;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .our-story .container .right .period-story {
+    padding: 1rem;
+    width: 50%;
+  }
+
+  .our-story .container .right .period-story:nth-child(odd) {
+    /* background-color: red; */
+    text-align: right;
+  }
+  .our-story .container .right .period-story:nth-child(even) {
+    /* background-color: green; */
+    align-self: flex-end;
+  }
+
+  .our-story .container .right h2.year {
+    color: #ef7a1e;
+  }
+  .our-story .container .right h2.title {
+    text-transform: uppercase;
+    font-weight: 500;
+    margin-bottom: 1rem;
+  }
+
+  .our-story .container .right .story-text {
+    font-size: 1.2rem;
+  }
+}

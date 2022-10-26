@@ -1,0 +1,186 @@
+/* //////////////////////////////////////////////////////////// */
+/* ////////////// */
+/* POPULAR DISHES */
+/* /////////// */
+
+.section-popular-dishes {
+}
+
+.section-popular-dishes .container {
+  padding-bottom: 10rem;
+  padding-top: 5rem;
+  grid-template-columns: repeat(1, 1fr);
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+.section-popular-dishes .container .popular-dishes-title {
+  font-size: 3rem;
+  text-align: center;
+  margin-bottom: 5rem;
+}
+
+.section-popular-dishes .container .category {
+  align-self: flex-end;
+  margin-bottom: 2rem;
+}
+
+.section-popular-dishes .container .category select {
+  padding: 1rem;
+  outline: none;
+  border: none;
+  border-radius: 1rem;
+  background: #ef7a1e;
+  color: #fff;
+  width: 10rem;
+}
+
+.section-popular-dishes .container .category select option {
+  font-size: 1.6rem;
+}
+
+.section-popular-dishes .container .dishes-cards {
+  display: grid !important;
+  grid-template-columns: repeat(4, 20rem) !important;
+  gap: 2rem;
+}
+
+.section-popular-dishes .container .dishes-cards .dish-card {
+  display: flex;
+  flex-direction: column;
+  padding: 2rem;
+  box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.25);
+  border-radius: 0.5rem;
+}
+
+.section-popular-dishes .container .dishes-cards .dish-card .dish-card-title {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.section-popular-dishes .container .dishes-cards .dish-card .dish-card-text {
+  font-size: 1.4rem;
+  margin-bottom: 1rem;
+}
+
+.section-popular-dishes
+  .container
+  .dishes-cards
+  .dish-card
+  .dish-card-selling
+  .dish-card-price {
+  font-size: 1.4rem;
+  color: #ef7a1e;
+  font-size: 1.8rem;
+}
+
+.section-popular-dishes .container .dishes-cards .dish-card .dish-card-selling {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.section-popular-dishes
+  .container
+  .dishes-cards
+  .dish-card
+  .dish-card-selling
+  img {
+  width: 4rem;
+}
+
+@media screen and (max-width: 376px) {
+  .section-popular-dishes {
+  }
+
+  .section-popular-dishes .container {
+    padding-bottom: 10rem;
+    padding-top: 5rem;
+    grid-template-columns: repeat(1, 1fr);
+    position: relative;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .section-popular-dishes .container .popular-dishes-title {
+    font-size: 3rem;
+    text-align: center;
+    margin-bottom: 5rem;
+  }
+
+  .section-popular-dishes .container .category {
+    align-self: flex-end;
+    margin-bottom: 2rem;
+  }
+
+  .section-popular-dishes .container .category select {
+    padding: 1rem;
+    outline: none;
+    border: none;
+    border-radius: 1rem;
+    background: #ef7a1e;
+    color: #fff;
+    width: 10rem;
+  }
+
+  .section-popular-dishes .container .category select option {
+    font-size: 1.6rem;
+  }
+
+  .section-popular-dishes .container .dishes-cards {
+    display: grid !important;
+    /* grid-template-columns: repeat(1, 30rem) !important; */
+    grid-template-columns: repeat(1, 1fr) !important;
+    justify-content: center;
+    gap: 2rem;
+  }
+
+  .section-popular-dishes .container .dishes-cards .dish-card {
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+    box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.25);
+    border-radius: 0.5rem;
+  }
+
+  .section-popular-dishes .container .dishes-cards .dish-card .dish-card-title {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+
+  .section-popular-dishes .container .dishes-cards .dish-card .dish-card-text {
+    font-size: 1.4rem;
+    margin-bottom: 1rem;
+  }
+
+  .section-popular-dishes
+    .container
+    .dishes-cards
+    .dish-card
+    .dish-card-selling
+    .dish-card-price {
+    font-size: 1.4rem;
+    color: #ef7a1e;
+    font-size: 1.8rem;
+  }
+
+  .section-popular-dishes
+    .container
+    .dishes-cards
+    .dish-card
+    .dish-card-selling {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .section-popular-dishes
+    .container
+    .dishes-cards
+    .dish-card
+    .dish-card-selling
+    img {
+    width: 4rem;
+  }
+}
