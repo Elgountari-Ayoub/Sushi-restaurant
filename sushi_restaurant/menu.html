@@ -24,117 +24,42 @@
     <!-- HEADER SECTION -->
     <header>
       <div class="container">
-        <!-- SHOPING CARD -->
-        <section class="shoping-products">
-          <div class="shoping-product">
-            <img
-              src="assets/media/images/menu/sushi-1.png"
-              alt="sushi"
-              class="product-img"
-            />
-            <div class="product-details">
-              <p class="product-name">Kawaii sushi</p>
-              <p>
-                <span class="product-number">1</span> x -
-                <span class="product-price">$240</span>
-              </p>
-            </div>
-            <button class="btn close-btn">X</button>
-          </div>
-          <div class="shoping-product">
-            <img
-              src="assets/media/images/menu/sushi-1.png"
-              alt="sushi"
-              class="product-img"
-            />
-            <div class="product-details">
-              <p class="product-name">Kawaii sushi</p>
-              <p>
-                <span class="product-number">1</span> x -
-                <span class="product-price">$240</span>
-              </p>
-            </div>
-            <button class="btn close-btn">X</button>
-          </div>
-          <div class="shoping-product">
-            <img
-              src="assets/media/images/menu/sushi-1.png"
-              alt="sushi"
-              class="product-img"
-            />
-            <div class="product-details">
-              <p class="product-name">Kawaii sushi</p>
-              <p>
-                <span class="product-number">1</span> x -
-                <span class="product-price">$240</span>
-              </p>
-            </div>
-            <button class="btn close-btn">X</button>
-          </div>
+        <nav>
+          <img
+            class="hamburger-menu"
+            id="hamburger-icon"
+            src="assets/media/images/icons/hamburger-menu.svg"
+            alt=""
+          />
 
-          <div class="total-calc">
-            <button class="total-btn">Total</button>
-            <span class="total-text">00.00</span>
-          </div>
-        </section>
-        <nav class="large-screen">
-          <div class="nav--1">
-            <a href="index.html">Home</a>
-            <a class="menuy" href="menu.html">Menu</a>
-          </div>
-          <div class="nav--2">
+          <a class="logo-link" href="index.html">
             <img
               class="logo"
               src="assets/media/images/icons/logo.png"
               alt="sushi-logo"
-            />
-            <a href="index.html"></a>
-          </div>
-          <div class="nav--3">
-            <a href="about.html">About</a>
-            <a href="contact.html">Contact</a>
-            <img
-              src="assets/media/images/icons/shop-card-icon.svg"
-              alt="shop-card-icon"
-              class="icon shoping-card-icon"
-            />
-          </div>
-        </nav>
-        <nav class="small-screen">
-          <div class="hamburger-menu">
-            <p>
-              <img src="assets/media/images/icons/hamburger-menu.svg" alt="" />
-            </p>
-            <ul>
-              <li>
-                <a class="homy" href="index.html">Home</a>
-              </li>
-              <li>
-                <a class="menuy" href="menu.html">Menu</a>
-              </li>
-              <li>
-                <a href="about.html">About</a>
-              </li>
-              <li>
-                <a href="contact.html">Contact</a>
-              </li>
-            </ul>
-          </div>
-          <div class="nav--2">
-            <img
-              class="logo"
-              src="assets/media/images/icons/logo.png"
-              alt="sushi-logo"
-            />
-            <a href="index.html"></a>
-          </div>
-          <div class="nav--3">
-            <img
-              src="assets/media/images/icons/shop-card-icon.svg"
-              alt="shop-card-icon"
-              class="icon shoping-card-icon"
-            />
-          </div>
+          /></a>
+
+          <ul id="links-menu" class="links-list">
+            <li>
+              <a href="index.html">Home</a>
+            </li>
+            <li>
+              <a class="menuy" href="menu.html">Menu</a>
+            </li>
+
+            <li>
+              <a href="about.html">About</a>
+            </li>
+            <li>
+              <a href="contact.html">Contact</a>
+            </li>
+          </ul>
+          <img
+            id="shop-prod-list-icon"
+            src="assets/media/images/icons/shop-card-icon.svg"
+            alt="shop-card-icon"
+            class="icon shoping-card-icon"
+          />
         </nav>
       </div>
     </header>
@@ -145,24 +70,26 @@
         <div class="category">
           <!-- <label for="cars">Choose a car:</label> -->
           <select id="dishes-categories" name="carlist" form="carform">
-            <option value="plats">Plats</option>
-            <option value="obento">Obento</option>
+            <option value="all">All</option>
+            <option value="sushi">Sushi</option>
+            <option value="vegetarian">Vegetarian</option>
             <option value="salade">Salade</option>
           </select>
         </div>
         <div class="dishes-cards">
-          <div class="dish-card">
+          <!-- SUSHI -->
+          <div id="sushi-1" class="dish-card sushi">
             <img
               class="dish-card-img"
-              src="assets/media/images/home/sushi-1.png"
+              src="assets/media/images/menu/sushi-1.png"
               alt="sushi-dishe"
             />
-            <h4 class="dish-card-title">Kawaii sushi</h4>
+            <h4 class="dish-card-title">Kawaii sushi 1</h4>
             <p class="dish-card-text">
               Sushi Is A Japanese Dish Of Prepared Vinegared Rice...
             </p>
             <div class="dish-card-selling">
-              <strong class="dish-card-price">$240.00</strong>
+              <strong class="dish-card-price">$10.00</strong>
               <img
                 class="icon dish-card-sell-icon"
                 src="assets/media/images/icons/shop-card-icon.svg"
@@ -171,18 +98,18 @@
             </div>
           </div>
 
-          <div class="dish-card">
+          <div id="sushi-2" class="dish-card sushi">
             <img
               class="dish-card-img"
-              src="assets/media/images/home/sushi-1.png"
+              src="assets/media/images/menu/sushi-2.png"
               alt="sushi-dishe"
             />
-            <h4 class="dish-card-title">Kawaii sushi</h4>
+            <h4 class="dish-card-title">Kawaii sushi 2</h4>
             <p class="dish-card-text">
               Sushi Is A Japanese Dish Of Prepared Vinegared Rice...
             </p>
             <div class="dish-card-selling">
-              <strong class="dish-card-price">$240.00</strong>
+              <strong class="dish-card-price">$20.00</strong>
               <img
                 class="icon dish-card-sell-icon"
                 src="assets/media/images/icons/shop-card-icon.svg"
@@ -191,18 +118,18 @@
             </div>
           </div>
 
-          <div class="dish-card">
+          <div id="sushi-3" class="dish-card sushi">
             <img
               class="dish-card-img"
-              src="assets/media/images/home/sushi-1.png"
+              src="assets/media/images/menu/sushi-3.png"
               alt="sushi-dishe"
             />
-            <h4 class="dish-card-title">Kawaii sushi</h4>
+            <h4 class="dish-card-title">Kawaii sushi 3</h4>
             <p class="dish-card-text">
               Sushi Is A Japanese Dish Of Prepared Vinegared Rice...
             </p>
             <div class="dish-card-selling">
-              <strong class="dish-card-price">$240.00</strong>
+              <strong class="dish-card-price">$30.00</strong>
               <img
                 class="icon dish-card-sell-icon"
                 src="assets/media/images/icons/shop-card-icon.svg"
@@ -211,18 +138,18 @@
             </div>
           </div>
 
-          <div class="dish-card">
+          <div id="sushi-4" class="dish-card sushi">
             <img
               class="dish-card-img"
-              src="assets/media/images/home/sushi-1.png"
+              src="assets/media/images/menu/sushi-4.png"
               alt="sushi-dishe"
             />
-            <h4 class="dish-card-title">Kawaii sushi</h4>
+            <h4 class="dish-card-title">Kawaii sushi 3</h4>
             <p class="dish-card-text">
               Sushi Is A Japanese Dish Of Prepared Vinegared Rice...
             </p>
             <div class="dish-card-selling">
-              <strong class="dish-card-price">$240.00</strong>
+              <strong class="dish-card-price">$40.00</strong>
               <img
                 class="icon dish-card-sell-icon"
                 src="assets/media/images/icons/shop-card-icon.svg"
@@ -231,18 +158,19 @@
             </div>
           </div>
 
-          <div class="dish-card">
+          <!-- vegetarian -->
+          <div class="dish-card vegetarian">
             <img
               class="dish-card-img"
-              src="assets/media/images/home/sushi-2.png"
+              src="assets/media/images/menu/vegetarian-1.png"
               alt="sushi-dishe"
             />
-            <h4 class="dish-card-title">Kawaii sushi</h4>
+            <h4 class="dish-card-title">vegetarian 1</h4>
             <p class="dish-card-text">
               Sushi Is A Japanese Dish Of Prepared Vinegared Rice...
             </p>
             <div class="dish-card-selling">
-              <strong class="dish-card-price">$240.00</strong>
+              <strong class="dish-card-price">$50.00</strong>
               <img
                 class="icon dish-card-sell-icon"
                 src="assets/media/images/icons/shop-card-icon.svg"
@@ -251,18 +179,18 @@
             </div>
           </div>
 
-          <div class="dish-card">
+          <div class="dish-card vegetarian">
             <img
               class="dish-card-img"
-              src="assets/media/images/home/sushi-2.png"
+              src="assets/media/images/menu/vegetarian-2.png"
               alt="sushi-dishe"
             />
-            <h4 class="dish-card-title">Kawaii sushi</h4>
+            <h4 class="dish-card-title">vegetarian 2</h4>
             <p class="dish-card-text">
               Sushi Is A Japanese Dish Of Prepared Vinegared Rice...
             </p>
             <div class="dish-card-selling">
-              <strong class="dish-card-price">$240.00</strong>
+              <strong class="dish-card-price">$60.00</strong>
               <img
                 class="icon dish-card-sell-icon"
                 src="assets/media/images/icons/shop-card-icon.svg"
@@ -271,18 +199,18 @@
             </div>
           </div>
 
-          <div class="dish-card">
+          <div class="dish-card vegetarian">
             <img
               class="dish-card-img"
-              src="assets/media/images/home/sushi-2.png"
+              src="assets/media/images/menu/vegetarian-3.png"
               alt="sushi-dishe"
             />
-            <h4 class="dish-card-title">Kawaii sushi</h4>
+            <h4 class="dish-card-title">vegetarian 3</h4>
             <p class="dish-card-text">
               Sushi Is A Japanese Dish Of Prepared Vinegared Rice...
             </p>
             <div class="dish-card-selling">
-              <strong class="dish-card-price">$240.00</strong>
+              <strong class="dish-card-price">$70.00</strong>
               <img
                 class="icon dish-card-sell-icon"
                 src="assets/media/images/icons/shop-card-icon.svg"
@@ -291,18 +219,18 @@
             </div>
           </div>
 
-          <div class="dish-card">
+          <div class="dish-card vegetarian">
             <img
               class="dish-card-img"
-              src="assets/media/images/home/sushi-2.png"
+              src="assets/media/images/menu/vegetarian-4.png"
               alt="sushi-dishe"
             />
-            <h4 class="dish-card-title">Kawaii sushi</h4>
+            <h4 class="dish-card-title">vegetarian 4</h4>
             <p class="dish-card-text">
               Sushi Is A Japanese Dish Of Prepared Vinegared Rice...
             </p>
             <div class="dish-card-selling">
-              <strong class="dish-card-price">$240.00</strong>
+              <strong class="dish-card-price">$80.00</strong>
               <img
                 class="icon dish-card-sell-icon"
                 src="assets/media/images/icons/shop-card-icon.svg"
@@ -311,18 +239,20 @@
             </div>
           </div>
 
-          <div class="dish-card">
+          <!-- SALADES -->
+
+          <div class="dish-card salade">
             <img
               class="dish-card-img"
-              src="assets/media/images/home/sushi-3.png"
+              src="assets/media/images/menu/salade-1.png"
               alt="sushi-dishe"
             />
-            <h4 class="dish-card-title">Kawaii sushi</h4>
+            <h4 class="dish-card-title">Salade 1</h4>
             <p class="dish-card-text">
               Sushi Is A Japanese Dish Of Prepared Vinegared Rice...
             </p>
             <div class="dish-card-selling">
-              <strong class="dish-card-price">$240.00</strong>
+              <strong class="dish-card-price">$90.00</strong>
               <img
                 class="icon dish-card-sell-icon"
                 src="assets/media/images/icons/shop-card-icon.svg"
@@ -330,18 +260,18 @@
               />
             </div>
           </div>
-          <div class="dish-card">
+          <div class="dish-card salade">
             <img
               class="dish-card-img"
-              src="assets/media/images/home/sushi-3.png"
+              src="assets/media/images/menu/salade-2.png"
               alt="sushi-dishe"
             />
-            <h4 class="dish-card-title">Kawaii sushi</h4>
+            <h4 class="dish-card-title">Salade 2</h4>
             <p class="dish-card-text">
               Sushi Is A Japanese Dish Of Prepared Vinegared Rice...
             </p>
             <div class="dish-card-selling">
-              <strong class="dish-card-price">$240.00</strong>
+              <strong class="dish-card-price">$100.00</strong>
               <img
                 class="icon dish-card-sell-icon"
                 src="assets/media/images/icons/shop-card-icon.svg"
@@ -349,18 +279,18 @@
               />
             </div>
           </div>
-          <div class="dish-card">
+          <div class="dish-card salade">
             <img
               class="dish-card-img"
-              src="assets/media/images/home/sushi-3.png"
+              src="assets/media/images/menu/salade-3.png"
               alt="sushi-dishe"
             />
-            <h4 class="dish-card-title">Kawaii sushi</h4>
+            <h4 class="dish-card-title">Salade 3</h4>
             <p class="dish-card-text">
               Sushi Is A Japanese Dish Of Prepared Vinegared Rice...
             </p>
             <div class="dish-card-selling">
-              <strong class="dish-card-price">$240.00</strong>
+              <strong class="dish-card-price">$110.00</strong>
               <img
                 class="icon dish-card-sell-icon"
                 src="assets/media/images/icons/shop-card-icon.svg"
@@ -368,18 +298,18 @@
               />
             </div>
           </div>
-          <div class="dish-card">
+          <div class="dish-card salade">
             <img
               class="dish-card-img"
-              src="assets/media/images/home/sushi-3.png"
+              src="assets/media/images/menu/salade-4.png"
               alt="sushi-dishe"
             />
-            <h4 class="dish-card-title">Kawaii sushi</h4>
+            <h4 class="dish-card-title">Salade 4</h4>
             <p class="dish-card-text">
               Sushi Is A Japanese Dish Of Prepared Vinegared Rice...
             </p>
             <div class="dish-card-selling">
-              <strong class="dish-card-price">$240.00</strong>
+              <strong class="dish-card-price">$120.00</strong>
               <img
                 class="icon dish-card-sell-icon"
                 src="assets/media/images/icons/shop-card-icon.svg"
@@ -479,5 +409,31 @@
         </div>
       </div>
     </footer>
+
+    <!-- SHOPING CART-->
+    <section id="shoping-products" class="shoping-products">
+      <!-- <div class="shoping-product">
+        <img
+          src="assets/media/images/menu/sushi-1.png"
+          alt="sushi"
+          class="product-img"
+        />
+        <div class="product-details">
+          <p class="product-name">sushi</p>
+          <p>
+            <input type="number" class="product-number" min="1" value="1" />x -
+            <span class="product-price">$10</span>
+          </p>
+        </div>
+        <button class="btn remove-btn">X</button>
+      </div> -->
+
+      <div class="total-calc">
+        <button class="total-btn">Total</button>
+        <span class="total-text">00.00</span>
+      </div>
+    </section>
+
+    <script src="assets/index.js"></script>
   </body>
 </html>

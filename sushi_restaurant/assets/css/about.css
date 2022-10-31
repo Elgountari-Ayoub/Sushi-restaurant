@@ -128,19 +128,16 @@
 }
 
 @media screen and (max-width: 376px) {
-  .section-about {
-  }
-
   .section-about .container {
-    padding-left: 0;
+    padding: 2rem;
   }
   .section-about .container .about-hero {
-    display: flex;
+    flex-direction: column;
     padding-bottom: 5rem;
   }
 
   .section-about .left {
-    width: 55%;
+    width: 100%;
   }
 
   .section-about .right {
@@ -150,27 +147,26 @@
   }
 
   .section-about .right h3 {
-    font-family: "TheSeasonsRegularItalic";
-    color: hsl(26, 87%, 53%);
-    font-size: 3rem;
+    font-size: 2rem;
     margin-bottom: 1rem;
+    text-align: center;
+    margin-top: 2rem;
   }
 
-  .section-about .about-title {
-    font-family: "TheSeasonsRegular";
-    font-size: 5rem;
-    letter-spacing: -1px;
-    margin-bottom: 1rem;
+  .section-about h1.about-title {
+    font-size: 3rem;
+    text-align: center;
+    /* letter-spacing: -1px; */
   }
 
   .section-about .right .about-title img {
-    width: 4.5rem;
-    margin-bottom: -1rem;
+    width: 3rem;
+    margin-bottom: -0.5rem;
   }
 
   .section-about .about-text {
-    font-size: 1.6rem;
-    line-height: 1.6;
+    font-size: 1.2rem;
+    /* line-height: 1.6; */
   }
 
   /* ////////////////// */
@@ -180,25 +176,23 @@
   }
 
   .our-story .container {
-    padding: 0rem 20rem;
-    padding-right: 0;
-    display: flex;
-    /* position: relative; */
-    background: transparent;
+    padding: 2rem;
+    /* padding-right: 0; */
+    flex-direction: column;
   }
-
+  .our-story .container .left {
+  }
   .our-story .container .left h2.title {
-    font-family: "TheSeasonsRegular";
-    font-size: 4rem;
+    text-align: center;
+    font-size: 2rem;
     margin-bottom: 3rem;
   }
-
   .our-story .container .left p.resum {
     font-size: 1.2rem;
     line-height: 1.6;
-    width: 70%;
+    width: 100%;
+    margin-bottom: 2rem;
   }
-
   .our-story .container .right {
     display: flex;
     flex-direction: column;
@@ -241,6 +235,7 @@
   }
 
   .our-story .container .right .story-text {
-    font-size: 1.2rem;
+    font-size: 1.1rem;
+    line-height: 1.6;
   }
 }

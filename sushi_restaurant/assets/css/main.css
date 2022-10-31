@@ -8,7 +8,7 @@
 /* NORMAL FONT */
 @font-face {
   font-family: "TheSeasonsRegular";
-  src: url("Fonts/TheSeasons/The_Seasons_Regular.ttf");
+  src: url("../Fonts/TheSeasons/The_Seasons_Regular.ttf");
 }
 @font-face {
   font-family: "TheSeasonsBold";
@@ -35,15 +35,16 @@
 }
 
 html {
-  font-size: 10px;
+  font-size: 62.5%;
 }
 
 body {
   font-family: "Open Sans", sans-serif;
   font-weight: normal;
+  color: #5d5d5d;
   /* width: 100vw; */
   /* height: 100vh; */
-  overflow-x: hidden;
+  overflow-x: hidden !important;
 }
 /* ////////////// */
 /* Design System */
@@ -58,6 +59,16 @@ button color:
  -> secondary
 
 */
+
+/* JS HELPERS */
+
+.hide {
+  display: none !important;
+}
+
+.show {
+  display: unset !important;
+}
 
 /* //////////////// */
 /* General styling */
@@ -87,7 +98,7 @@ a:active {
 .abouty,
 .menuy,
 .contacty {
-  color: #ef7a1e;
+  color: #ff5f00;
 }
 
 .icon,
@@ -126,73 +137,235 @@ header {
 }
 
 header nav {
-  padding-top: 4rem;
+  padding-top: 2rem;
   display: flex;
   align-items: center;
   justify-content: space-between;
+
+  width: 100%;
+  position: relative;
 }
-header nav.small-screen {
-  padding-top: 0px;
+
+nav .logo-link {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+header nav .hamburger-menu {
+  position: absolute;
+  left: 0;
   display: none;
 }
 
-header nav .nav--1 {
-}
-header nav .nav--1 a {
-  padding-right: 4rem;
-}
-
-header nav .nav--2 {
-  position: relative;
-}
-header nav .nav--2 a {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-}
-
-header nav .nav--3 a:nth-child(1) {
-  padding-right: 5rem;
-}
-
-header nav .nav--3 a:nth-child(2) {
-  padding-right: 1rem;
-}
-
-header nav div.nav--3 {
+header nav ul {
   display: flex;
   align-items: center;
+  width: 100%;
 }
 
-header nav div a {
+header nav ul li {
+  /* position: absolute; */
+}
+
+header nav ul li:nth-child(1) {
+  justify-self: flex-end;
+}
+header nav ul li:nth-child(2) {
+  margin-left: 4rem;
+}
+header nav ul li:nth-child(3) {
+  margin-left: auto;
+  margin-right: 4rem;
+}
+header nav ul li:nth-child(4) {
+  margin-right: 1rem;
+}
+
+header nav img.shoping-card-icon {
+}
+
+header nav ul li a {
   font-weight: 600;
-  /* padding-right: 2rem; */
+}
+
+/* /////////////////////////////////////////// */
+/* Shoping Card */
+/* /////////////////////////////////////////// */
+section.shoping-products.show-shoping-products {
+  opacity: 0.9;
+  position: fixed;
+  top: 9rem;
+}
+section.shoping-products {
+  position: absolute;
+  top: -100rem;
+  right: 1rem;
+  transition: all 1s;
+
+  background-color: #fff;
+  color: #fff;
+  width: fit-content;
+  min-height: fit-content;
+  max-height: 40rem;
+  overflow-y: auto;
+}
+
+section.shoping-products .shoping-product {
+  /* Templ */
+  background-color: #efa545;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 0.2rem solid black;
+}
+
+section.shoping-products .shoping-product img {
+  width: 10rem;
+}
+
+section.shoping-products .shoping-product .product-details {
+  font-size: 1.4rem;
+}
+
+section.shoping-products .shoping-product .product-details .product-name {
+  margin-bottom: 0.5rem;
+}
+
+section.shoping-products .shoping-product .product-details .product-number {
+  width: 4rem;
+}
+
+section.shoping-products .shoping-product .product-details .product-price {
+}
+
+section.shoping-products .shoping-product .remove-btn {
+  background-color: transparent;
+  color: red !important;
+}
+
+section.shoping-products .total-calc {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 2rem;
+  padding: 1rem 2rem;
+  font-size: 2rem;
+  gap: 5rem;
+}
+
+section.shoping-products .total-calc .total-btn {
+  padding: 1rem 2.5rem;
+  border-radius: 1rem;
+  cursor: pointer;
+}
+
+section.shoping-products .total-calc .total-text {
+  color: #ef7a1e;
 }
 
 @media screen and (max-width: 376px) {
-  header nav.small-screen {
-    display: flex;
-    align-items: flex-start;
-  }
-
-  /* TEMP EDETION (JS) */
-  header nav.small-screen ul {
-    display: none;
-  }
-
-  header nav.large-screen {
-    display: none;
-  }
   .container {
     padding: 2rem;
+    background-image: linear-gradient(to right, white 50%, #fdd9bc);
   }
-  .logo {
-    width: 10rem;
+  header .container {
+    position: relative;
+    padding: 1rem 2rem;
   }
-  nav .shoping-card-icon {
-    width: 4rem;
+
+  header nav {
+    padding-top: 0;
+    margin-top: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    width: 100%;
+    position: relative;
+
+    height: 5rem;
+  }
+
+  nav .logo-link {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  nav img.logo {
+    width: 12rem;
+  }
+  nav img.hamburger-menu {
+    display: block;
+    cursor: pointer;
+  }
+
+  header nav .hamburger-menu {
+    position: absolute;
+    left: 0;
+    /* width: 5rem; */
+  }
+
+  header nav ul {
+    position: fixed;
+    transform: translateY(-120%);
+    transition: all 1s;
+
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 2rem;
+
+    width: fit-content;
+    padding: 2rem 5rem 10rem 1rem;
+    border-radius: 1rem;
+
+    background: #252525d4;
+    color: orange;
+    z-index: -1;
+  }
+
+  header nav ul.show-links-menu {
+    transform: translateY(0);
+    top: 9rem;
+  }
+  header nav ul li {
+  }
+
+  header nav ul li:nth-child(1) {
+    justify-self: flex-start;
+  }
+  header nav ul li:nth-child(2) {
+    margin: 0;
+  }
+  header nav ul li:nth-child(3) {
+    margin: 0;
+  }
+  header nav ul li:nth-child(4) {
+    margin: 0;
+  }
+
+  header nav img.shoping-card-icon {
+    position: absolute;
+    right: 0;
+  }
+
+  header nav ul li a {
+    font-weight: 600;
+    color: white;
+  }
+  .homy,
+  .abouty,
+  .menuy,
+  .contacty {
+    color: #ef7a1e;
+  }
+
+  .show-shoping-products .container {
+    width: 50%;
   }
 }
 
@@ -252,6 +425,13 @@ header nav div a {
 .section-hero .hero-image img {
   width: 100%;
   height: 100%;
+}
+
+.show {
+  transform: translateX(0);
+}
+.close {
+  transform: translateX(-100%);
 }
 @media screen and (max-width: 376px) {
   .section-hero .container {
@@ -314,7 +494,7 @@ header nav div a {
 .section-popular-dishes .container .dishes-cards {
   display: flex;
   justify-content: space-between;
-  flex-wrap: wrap;
+  /* flex-wrap: wrap; */
   gap: 2rem;
 }
 
@@ -576,71 +756,4 @@ footer .links .clients a img {
   footer .links .clients a img {
     width: 2rem;
   }
-}
-
-/* /////////////////////////////////////////// */
-/* Shoping Card */
-/* /////////////////////////////////////////// */
-
-section.shoping-products {
-  position: absolute;
-  top: 100%;
-  right: 0;
-  width: 25%;
-  background-color: #fff;
-  color: #fff;
-
-  /* I w'll handle it using js */
-  display: none;
-}
-
-section.shoping-products .shoping-product {
-  /* Templ */
-  background-color: #efa545;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  border-bottom: 0.2rem solid black;
-}
-
-section.shoping-products .shoping-product img {
-  width: 10rem;
-}
-
-section.shoping-products .shoping-product .product-details {
-  font-size: 1.4rem;
-}
-
-section.shoping-products .shoping-product .product-details .product-name {
-  margin-bottom: 0.5rem;
-}
-
-section.shoping-products .shoping-product .product-details .product-number {
-}
-
-section.shoping-products .shoping-product .product-details .product-price {
-}
-
-section.shoping-products .shoping-product .close-btn {
-  background-color: transparent;
-  color: red;
-}
-
-section.shoping-products .total-calc {
-  display: flex;
-  width: 100%;
-  justify-content: space-between;
-  align-items: center;
-  margin-top: 2rem;
-  padding: 1rem 2rem;
-  font-size: 2rem;
-}
-
-section.shoping-products .total-calc .total-btn {
-  padding: 1rem 2.5rem;
-  border-radius: 1rem;
-}
-
-section.shoping-products .total-calc .total-text {
-  color: #ef7a1e;
 }

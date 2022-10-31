@@ -22,117 +22,42 @@
     <!-- HEADER SECTION -->
     <header>
       <div class="container">
-        <!-- SHOPING CARD -->
-        <section class="shoping-products">
-          <div class="shoping-product">
-            <img
-              src="assets/media/images/menu/sushi-1.png"
-              alt="sushi"
-              class="product-img"
-            />
-            <div class="product-details">
-              <p class="product-name">Kawaii sushi</p>
-              <p>
-                <span class="product-number">1</span> x -
-                <span class="product-price">$240</span>
-              </p>
-            </div>
-            <button class="btn close-btn">X</button>
-          </div>
-          <div class="shoping-product">
-            <img
-              src="assets/media/images/menu/sushi-1.png"
-              alt="sushi"
-              class="product-img"
-            />
-            <div class="product-details">
-              <p class="product-name">Kawaii sushi</p>
-              <p>
-                <span class="product-number">1</span> x -
-                <span class="product-price">$240</span>
-              </p>
-            </div>
-            <button class="btn close-btn">X</button>
-          </div>
-          <div class="shoping-product">
-            <img
-              src="assets/media/images/menu/sushi-1.png"
-              alt="sushi"
-              class="product-img"
-            />
-            <div class="product-details">
-              <p class="product-name">Kawaii sushi</p>
-              <p>
-                <span class="product-number">1</span> x -
-                <span class="product-price">$240</span>
-              </p>
-            </div>
-            <button class="btn close-btn">X</button>
-          </div>
+        <nav>
+          <img
+            class="hamburger-menu"
+            id="hamburger-icon"
+            src="assets/media/images/icons/hamburger-menu.svg"
+            alt=""
+          />
 
-          <div class="total-calc">
-            <button class="total-btn">Total</button>
-            <span class="total-text">00.00</span>
-          </div>
-        </section>
-        <nav class="large-screen">
-          <div class="nav--1">
-            <a class="homy" href="index.html">Home</a>
-            <a href="menu.html">Menu</a>
-          </div>
-          <div class="nav--2">
+          <a class="logo-link" href="index.html">
             <img
               class="logo"
               src="assets/media/images/icons/logo.png"
               alt="sushi-logo"
-            />
-            <a href="index.html"></a>
-          </div>
-          <div class="nav--3">
-            <a href="about.html">About</a>
-            <a href="contact.html">Contact</a>
-            <img
-              src="assets/media/images/icons/shop-card-icon.svg"
-              alt="shop-card-icon"
-              class="icon shoping-card-icon"
-            />
-          </div>
-        </nav>
-        <nav class="small-screen">
-          <div class="hamburger-menu">
-            <p>
-              <img src="assets/media/images/icons/hamburger-menu.svg" alt="" />
-            </p>
-            <ul>
-              <li>
-                <a class="homy" href="index.html">Home</a>
-              </li>
-              <li>
-                <a href="menu.html">Menu</a>
-              </li>
-              <li>
-                <a href="about.html">About</a>
-              </li>
-              <li>
-                <a href="contact.html">Contact</a>
-              </li>
-            </ul>
-          </div>
-          <div class="nav--2">
-            <img
-              class="logo"
-              src="assets/media/images/icons/logo.png"
-              alt="sushi-logo"
-            />
-            <a href="index.html"></a>
-          </div>
-          <div class="nav--3">
-            <img
-              src="assets/media/images/icons/shop-card-icon.svg"
-              alt="shop-card-icon"
-              class="icon shoping-card-icon"
-            />
-          </div>
+          /></a>
+
+          <ul id="links-menu" class="links-list">
+            <li>
+              <a class="homy" href="index.html">Home</a>
+            </li>
+            <li>
+              <a href="menu.html">Menu</a>
+            </li>
+
+            <li>
+              <a href="about.html">About</a>
+            </li>
+            <li>
+              <a href="contact.html">Contact</a>
+            </li>
+          </ul>
+          <img
+            id="shop-prod-list-icon"
+            src="assets/media/images/icons/shop-card-icon.svg"
+            alt="shop-card-icon"
+            class="icon shoping-card-icon"
+          />
         </nav>
       </div>
     </header>
@@ -315,5 +240,15 @@
         </div>
       </div>
     </footer>
+
+    <!-- SHOPING CARD -->
+    <section id="shoping-products" class="shoping-products">
+      <div class="total-calc">
+        <button class="total-btn">Total</button>
+        <span class="total-text">00.00</span>
+      </div>
+    </section>
+
+    <script src="assets/index.js"></script>
   </body>
 </html>

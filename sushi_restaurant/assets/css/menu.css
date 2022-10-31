@@ -54,6 +54,11 @@
   border-radius: 0.5rem;
 }
 
+.section-popular-dishes .container .dishes-cards .dish-card .dish-card-img {
+  width: 15rem;
+  height: 15rem;
+  align-self: center;
+}
 .section-popular-dishes .container .dishes-cards .dish-card .dish-card-title {
   font-size: 2rem;
   margin-bottom: 1rem;
@@ -182,5 +187,13 @@
     .dish-card-selling
     img {
     width: 4rem;
+  }
+
+  .section-popular-dishes
+    .container
+    .dishes-cards
+    .dish-card
+    .dish-card-selling
+    img:hover {
   }
 }
