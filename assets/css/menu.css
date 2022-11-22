@@ -22,7 +22,7 @@
 }
 
 .section-popular-dishes .container .category {
-  align-self: flex-end;
+  align-self: flex-start;
   margin-bottom: 2rem;
 }
 

@@ -77,7 +77,7 @@ input[type="submit"] {
   }
 
   input {
-    width: 3rem;
+    /* width: 3rem; */
   }
 
   input[type="submit"] {

@@ -194,25 +194,26 @@ header nav ul li a {
 /* /////////////////////////////////////////// */
 section.shoping-products.show-shoping-products {
   opacity: 0.9;
-  position: fixed;
-  top: 9rem;
+  right: 1rem;
 }
 section.shoping-products {
-  position: absolute;
-  top: -100rem;
-  right: 1rem;
+  position: fixed;
+  /* position: absolute; */
+  top: 9rem;
+
+  /* top: -100rem; */
+  right: -100rem;
   transition: all 1s;
 
   background-color: #fff;
   color: #fff;
   width: fit-content;
   min-height: fit-content;
-  max-height: 40rem;
+  max-height: 30rem;
   overflow-y: auto;
 }
 
 section.shoping-products .shoping-product {
-  /* Templ */
   background-color: #efa545;
   display: flex;
   justify-content: space-between;
@@ -255,7 +256,8 @@ section.shoping-products .total-calc {
   gap: 5rem;
 }
 
-section.shoping-products .total-calc .total-btn {
+section.shoping-products .total-calc .total-btn,
+section.shoping-products .total-calc .buy-btn {
   padding: 1rem 2.5rem;
   border-radius: 1rem;
   cursor: pointer;
@@ -277,7 +279,7 @@ section.shoping-products .total-calc .total-text {
 
   header nav {
     padding-top: 0;
-    margin-top: 2rem;
+    margin-top: 4rem;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -310,7 +312,9 @@ section.shoping-products .total-calc .total-text {
 
   header nav ul {
     position: fixed;
-    transform: translateY(-120%);
+    /* transform: translateY(-120%); */
+    top: 9rem;
+    left: -99rem;
     transition: all 1s;
 
     display: flex;
@@ -323,7 +327,7 @@ section.shoping-products .total-calc .total-text {
     padding: 2rem 5rem 10rem 1rem;
     border-radius: 1rem;
 
-    background: #252525d4;
+    background: #fdf2e9;
     color: orange;
     z-index: -1;
   }
@@ -331,6 +335,11 @@ section.shoping-products .total-calc .total-text {
   header nav ul.show-links-menu {
     transform: translateY(0);
     top: 9rem;
+    left: 1rem;
+  }
+
+  header nav ul a {
+    color: #5d5d5d;
   }
   header nav ul li {
   }
@@ -355,13 +364,17 @@ section.shoping-products .total-calc .total-text {
 
   header nav ul li a {
     font-weight: 600;
-    color: white;
+    color: #5d5d5d;
   }
   .homy,
   .abouty,
   .menuy,
   .contacty {
     color: #ef7a1e;
+  }
+
+  .shoping-product img {
+    width: 10px;
   }
 
   .show-shoping-products .container {
@@ -618,6 +631,21 @@ section.shoping-products .total-calc .total-text {
 
 footer .container {
   /* padding-bottom: 2rem; */
+}
+
+footer .container .google-map {
+  display: inline-block;
+  border: 0;
+  position: relative;
+}
+
+footer .container .google-map::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: #fdd9bc;
+  opacity: 0.3;
 }
 .main-footer {
   display: grid;
