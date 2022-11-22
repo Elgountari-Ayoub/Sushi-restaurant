@@ -639,14 +639,14 @@ footer .container .google-map {
   position: relative;
 }
 
-footer .container .google-map::before {
+/* footer .container .google-map::before {
   content: "";
   position: absolute;
   width: 100%;
   height: 100%;
   background-color: #fdd9bc;
   opacity: 0.3;
-}
+} */
 .main-footer {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
