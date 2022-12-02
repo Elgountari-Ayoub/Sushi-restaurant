@@ -62,6 +62,11 @@ input[type="submit"] {
   padding-bottom: 0.5rem;
 }
 
+
+.google-map {
+  padding: 5rem 0rem;
+}
+
 /* ////////////////////// */
 
 @media screen and (max-width: 376px) {
@@ -130,3 +135,5 @@ input[type="submit"] {
     padding-bottom: 0.5rem;
   }
 }
+
+
